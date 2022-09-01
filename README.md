@@ -1,5 +1,3 @@
-# Module 11 Challenge
-
 ## Background
 
 You’re a growth analyst at [MercadoLibre](http://investor.mercadolibre.com/investor-relations). With over 200 million users, MercadoLibre is the most popular e-commerce site in Latin America. You've been tasked with analyzing the company's financial and user data in clever ways to help the company grow. So, you want to find out if the ability to predict search traffic can translate into the ability to successfully trade the stock.
@@ -16,16 +14,7 @@ In a bid to drive revenue, you’ll produce a Jupyter notebook that contains you
     
 * Answers to the questions in the instructions that you write in your Jupyter notebook.
     
-* (Optional) A plot of a forecast for the company’s future revenue.
-    
-
-Make sure to also create a Markdown `README.md` file that summarizes your models and findings.
-
-## Files
-
-Download the following files to help you get started:
-
-* [Module 11 Challenge files](/courses/1571/files/1866057/download)
+* A plot of a forecast for the company’s future revenue.
 
 ## Instructions
 
@@ -198,7 +187,7 @@ To receive all points, you must:
     * What's the lowest point for search traffic in the calendar year?
         
 
-### (Optional) Forecast Revenue by Using Time Series Models (15 points)
+### Forecast Revenue by Using Time Series Models (15 points)
 
 To receive all points, you must:
 
@@ -207,34 +196,3 @@ To receive all points, you must:
 * Interpret the model output to identify any seasonal patterns in the company's revenue. For example, what are the peak revenue days? (5 points)
     
 * Produce a sales forecast for the finance group. Give them a number for the expected total sales in the next quarter. Include the best- and worst-case scenarios to help them make better plans. (5 points)
-    
-
-### Coding Conventions and Formatting (10 points)
-
-To receive all points, you must:
-
-* Place imports at the top of the file, just after any module comments and docstrings and before any module globals and constants. (3 points)
-    
-* Name functions and variables with lowercase letters and with words separated by underscores. (2 points)
-    
-* Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-    
-* Use concise logic and creative engineering where possible. (2 points)
-    
-
-### Deployment and Submission (10 points)
-
-To receive all points, you must:
-
-* Submit a link to a GitHub repository that’s cloned to your local computer and that contains your files. (4 points)
-    
-* Use the command line to add your files the repository. (3 points)
-    
-* Include appropriate commit messages for your files. (3 points)
-    
-
-### Code Comments (10 points)
-
-To receive all points, your code must:
-
-* Be well commented with concise, relevant notes that other developers can understand. (10 points)
