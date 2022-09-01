@@ -2,10 +2,6 @@
 
 You’re a growth analyst at [MercadoLibre](http://investor.mercadolibre.com/investor-relations). With over 200 million users, MercadoLibre is the most popular e-commerce site in Latin America. You've been tasked with analyzing the company's financial and user data in clever ways to help the company grow. So, you want to find out if the ability to predict search traffic can translate into the ability to successfully trade the stock.
 
-## What You’re Creating
-
-In a bid to drive revenue, you’ll produce a Jupyter notebook that contains your data preparation, your analysis, and your visualizations for all the time series data that the company needs to understand. You’ll use text and comments to document your findings. And, you’ll answer the question prompts in the instructions. Specifically, this notebook should contain the following:
-
 * Visual depictions of seasonality (as measured by Google Search traffic) that are of interest to the company.
     
 * An evaluation of how the company stock price correlates to its Google Search traffic.
@@ -17,19 +13,6 @@ In a bid to drive revenue, you’ll produce a Jupyter notebook that contains you
 * A plot of a forecast for the company’s future revenue.
 
 ## Instructions
-
-First, configure a Google Colaboratory, or Colab, workspace as follows:
-
-1.  Open [Google Colab](https://colab.research.google.com/), and then upload your starter notebook.
-    
-2.  Run the provided code in the “Install and import the required libraries and dependencies” section. Note the following:
-    
-    * The first cell installs the necessary libraries into the Google Colab runtime.
-        
-    * The second cell imports the dependencies for use in the notebook.
-        
-
-With your workspace configured, you can begin the Challenge. The instructions are divided into four steps and an optional fifth step as follows:
 
 * Step 1: Find unusual patterns in hourly Google Search traffic.
     
@@ -104,7 +87,7 @@ Now, you need to produce a time series model that analyzes and forecasts pattern
     * What's the lowest point for search traffic in the calendar year?
         
 
-### Step 5 (Optional): Forecast the Revenue by Using Time Series Models
+### Step 5: Forecast the Revenue by Using Time Series Models
 
 A few weeks after your initial analysis, the finance group follows up to find out if you can help them solve a different problem. Your fame as a growth analyst in the company continues to grow!
 
@@ -117,82 +100,3 @@ To do so, complete the following steps:
 2.  Interpret the model output to identify any seasonal patterns in the company revenue. For example, what are the peak revenue days? (Mondays? Fridays? Something else?)
     
 3.  Produce a sales forecast for the finance group. Give them a number for the expected total sales in the next quarter. Include the best- and worst-case scenarios to help them make better plans.
-    
-
-## Requirements
-
-### Find Unusual Patterns in Hourly Google Search Traffic (20 points)
-
-To receive all points, you must:
-
-* Read the search data into a DataFrame, and then slice the data to just the month of May 2020. (During this month, MercadoLibre released its quarterly financial results.) (5 points)
-    
-* Use hvPlot to visualize the results. (5) points)
-    
-* Answer the following question: Do any unusual patterns exist? (2 points)
-    
-* Calculate the total search traffic for the month and then compare the value to the monthly median across all months. (6 points)
-    
-* Answer the following question: Did the Google search traffic increase during the month that MercadoLibre released its financial results? (2 points)
-    
-
-### Mine the Search Traffic Data for Seasonality (15 points)
-
-To receive all points, you must:
-
-* Group the hourly search data to plot the average traffic by the day of the week (for example, Monday vs. Friday). (4 points)
-    
-* Visualize this traffic as a heatmap by using hvPlot, referencing the `index.hour` as the x-axis and the `index.dayofweek` as the y-axis. (3 points)
-    
-* Answer the following question: Does any day-of-week effect that you observe concentrate in just a few hours of that day? (2 points)
-    
-* Group the search data by the week of the year. (4 points)
-    
-* Answer the following question: Does the search traffic tend to increase during the winter holiday period (weeks 40 through 52)? (2 points)
-    
-
-### Relate the Search Traffic to Stock Price Patterns (20 points)
-
-To receive all points, you must:
-
-* Read in and plot the stock price data and concatenate the stock price data to the search data in a single DataFrame. (5 points)
-    
-* Slice the data to just the first half of 2020 (`2020-01` to `2020-06` in the DataFrame) and then use hvPlot to plot the data. (5 points)
-    
-* Answer the following question: Do both time series indicate a common trend that’s consistent with this narrative? (2 points)
-    
-* Create three new columns in the DataFrame. The first is "Lagged Search Trends", which offsets, or shifts, the search traffic by one hour. The second is "Stock Volatility", which holds an exponentially weighted four-hour rolling average of the company’s stock volatility. The third is "Hourly Stock Return", which holds the percentage change of the company's stock price on an hourly basis. (6 points)
-    
-* Review the time series correlation and then answer the following question: Does a predictable relationship exist between the lagged search traffic and the stock volatility or between the lagged search traffic and the stock price returns? (2 points)
-    
-
-### Create a Time Series Model with Prophet (15 points)
-
-To receive all points, you must:
-
-* Set up the Google search data for a Prophet forecasting model. (3 points)
-    
-* Plot the forecast after estimating the model. (4 points)
-    
-* Answer the following question: How's the near-term forecast for the popularity of MercadoLibre? (1 point)
-    
-* Plot the individual time series components of the model. (4 points)
-    
-* Answer the following questions: (3 points)
-    
-    * What time of day exhibits the greatest popularity?
-        
-    * Which day of the week gets the most search traffic?
-        
-    * What's the lowest point for search traffic in the calendar year?
-        
-
-### Forecast Revenue by Using Time Series Models (15 points)
-
-To receive all points, you must:
-
-* Read in the daily historical sales (that is, revenue) figures and then apply a Prophet model to the data. (5 points)
-    
-* Interpret the model output to identify any seasonal patterns in the company's revenue. For example, what are the peak revenue days? (5 points)
-    
-* Produce a sales forecast for the finance group. Give them a number for the expected total sales in the next quarter. Include the best- and worst-case scenarios to help them make better plans. (5 points)
